@@ -1,0 +1,44 @@
+@media all and (max-width: 1024px) {
+  body {
+    padding: 5vw;
+    main {
+      padding-bottom: 15vw;
+    }
+    .error {
+      .error-code {
+        font-size: 6vw;
+      }
+    }
+    .main {
+      display: block;
+      .main {
+        &-img {
+          padding: 5vw;
+        }
+        &-txt {
+          display: flex;
+          flex-flow: column nowrap;
+          gap: 10vw;
+          .main {
+            &-h {
+              font-size: 10vw;
+            }
+            &-info {
+              font-size: 4.5vw;
+              width: 100%;
+            }
+            &-btn {
+              width: 44vw;
+              height: 15vw;
+              font-size: 3vw;
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      font-size: 3.5vw;
+      text-align: center;
+    }
+  }
+}

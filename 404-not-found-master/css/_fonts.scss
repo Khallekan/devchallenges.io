@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.error {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  color: $very-dark-gray;
+  text-transform: uppercase;
+}
+.main {
+  font-family: 'Space Mono', monospace;
+  color: $very-dark-gray;
+  font-weight: 700;
+  .main {
+    &-info {
+      color: $dark-gray;
+      font-weight: 400;
+    }
+    &-btn {
+      font-family: inherit;
+      color: white;
+    }
+  }
+}
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  color: $light-gray;
+}

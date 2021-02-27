@@ -1,0 +1,61 @@
+@import './reset';
+@import './variables';
+@import './fonts';
+@import './button';
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+  // padding: 1rem;
+  height: 100vh;
+  main {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 1rem 3rem;
+  }
+  .footer {
+    grid-row: 2/3;
+  }
+  .error {
+    grid-row: 1/2;
+    .error-code {
+      font-size: 1rem;
+    }
+  }
+  .main {
+    grid-row: 2/3;
+    display: flex;
+    flex-flow: row nowrap;
+    &-img {
+      flex: 0 0 40%;
+      display: flex;
+      align-items: center;
+    }
+    &-txt {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      gap: 2rem;
+      .main {
+        &-h {
+          font-size: 5em;
+        }
+        &-info {
+          width: 60%;
+          font-size: 1.7rem;
+        }
+        &-btn {
+          width: 40%;
+          height: 5rem;
+        }
+      }
+    }
+  }
+  .footer {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+
+@import './mediaquery';
